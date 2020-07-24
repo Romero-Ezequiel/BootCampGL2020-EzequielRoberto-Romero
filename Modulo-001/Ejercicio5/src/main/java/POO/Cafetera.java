@@ -1,6 +1,6 @@
 package POO;
 
-public class Cafetera{
+public class Cafetera extends Electrodomestico{
     
     private double litros;
 

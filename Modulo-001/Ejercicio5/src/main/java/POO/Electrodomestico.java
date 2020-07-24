@@ -1,12 +1,7 @@
 package POO;
 
-import POO.Cafetera;
-import POO.Heladera;
-import POO.Heladera;
-
 public class Electrodomestico 
 {
-
     private String marca;
     private double pesos;
     private char consumo;

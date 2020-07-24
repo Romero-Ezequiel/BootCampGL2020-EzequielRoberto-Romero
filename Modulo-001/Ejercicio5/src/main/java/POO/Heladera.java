@@ -1,6 +1,6 @@
 package POO;
 
-public class Heladera {
+public class Heladera extends Electrodomestico{
 
     private double capacidad;
     private boolean tieneFreezer;
