@@ -1,9 +1,15 @@
 package POO;
 
-public class Televisor extends Electrodomestico {
+class Televisor extends Electrodomestico {
 
     private double pulgadas;
     private String resolucion;
+
+    public Televisor(double pulgadas, String resolucion){
+        super();
+        this.pulgadas = pulgadas;
+        this.resolucion = resolucion;
+    }
 
     public double getPulgadas() {
         return pulgadas;

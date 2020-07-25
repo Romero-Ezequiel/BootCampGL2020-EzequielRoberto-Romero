@@ -1,10 +1,11 @@
 package POO;
 
-public class Electrodomestico 
+class Electrodomestico 
 {
     private String marca;
     private double pesos;
     private char consumo;
+
 
     public void setConsumo(char consumo) {
         this.consumo = consumo;
@@ -35,10 +36,6 @@ public class Electrodomestico
 
     public void apagar(){
         System.out.println("Apagaste el Eletrodomestico");
-    }
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
     }
 }
 
