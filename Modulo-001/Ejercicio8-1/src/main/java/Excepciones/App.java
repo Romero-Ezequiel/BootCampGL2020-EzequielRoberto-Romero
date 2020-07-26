@@ -25,8 +25,8 @@ public class App
     {
         try{
             throw new Exception("Esto es una Excepción");
-        }catch (Exception exception){
-            System.out.println("Se produjo una excepción : Esto es una Excepción");
+        }catch (Exception e){
+            System.out.println("Se produjo una excepción : "+ e.getMessage());
         }finally{
             System.out.println("Esto se ejecuta sin importar si se presentan errores");
         }
