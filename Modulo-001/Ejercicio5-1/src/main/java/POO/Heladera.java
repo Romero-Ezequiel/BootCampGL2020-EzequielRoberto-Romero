@@ -6,6 +6,13 @@ class Heladera extends Electrodomestico{
     private boolean tieneFreezer;
     private double capacidadFreezer;
 
+    public Heladera(double capacidad, boolean tieneFreezer, double capacidadFreezer){
+        super();
+        this.capacidad = capacidad;
+        this.tieneFreezer = tieneFreezer;
+        this.capacidadFreezer = capacidadFreezer;        
+    }
+
     public void setCapacidad(double capacidad) {
         this.capacidad = capacidad;
     }
