@@ -1,0 +1,22 @@
+package POO;
+
+/**
+Ejercicio 7.3 : Metodo default y múltiples interfaces 
+Pasos:
+Crear una interfaz Persona.
+Crear dos métodos hablar, dormir y un método por default come.
+Crear una clase Hombre que implemente la clase Animal y Persona.
+Implementar los métodos creados en ambas interfaces.
+En cada método mostrar un mensaje de salida.
+En la misma clase agregar un método main().
+Crear un objeto de tipo Hombre e invocar a los métodos
+implementados anteriormente.
+Validar la salida.
+
+Se espera como salida: 
+El hombre duerme muchas horas
+Las personas hablan mucho
+El hombre no hace sonidos de animal
+Se ejecuta método de la clase Hombre 
+ *
+ */
