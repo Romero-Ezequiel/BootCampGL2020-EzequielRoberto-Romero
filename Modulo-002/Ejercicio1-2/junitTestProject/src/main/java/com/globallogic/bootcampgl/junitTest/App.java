@@ -4,10 +4,9 @@ public class App
 {
     
     public static void main(String[] args){
-        String texto1 = "Hola";
-        String texto2 = "Hola";
-        String texto3 = "lalal";
-       
+        String cadenaTexto1 = "lalala";
+        String cadenaTexto2 = "lalala";
+        String cadenaTexto3 = "lololo";
     }
     
     

@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class AppTest {
-
-    @Test
-    void test() {
-        String texto1 = "hola";
-        String texto2 = "hola";
-        
-        assertEquals(texto1, texto2);   
     
+    @Test
+    void testString() {
+        String cadenaTexto1 = "lalala";
+        String cadenaTexto2 = "lalala";
+        String cadenaTexto3 = "lololo";
+        
+        assertNotEquals(cadenaTexto1, cadenaTexto2, cadenaTexto3);
     }
 
 }
