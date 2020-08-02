@@ -14,11 +14,9 @@ import org.junit.jupiter.api.Test;
 class AppTest {
     
     @Test
-    void test() {
-        boolean valor1 = 25 > 12;
-        boolean valor2 = 25 > 27;
-        assertTrue(valor1);
-        assertFalse(valor2);
+    void test() { 
+        assertTrue(25 > 12);
+        assertFalse(25 > 27);
     }
 
 }
