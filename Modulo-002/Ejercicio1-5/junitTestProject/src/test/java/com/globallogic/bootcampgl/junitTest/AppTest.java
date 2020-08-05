@@ -24,11 +24,9 @@ class AppTest {
     //Ejercicio 1.3 -> Para que tire error
     @Test
     void testBooleano(){
-        boolean comparar1 = 15 > 25;
-        boolean comparar2 = 12 > 25;
         
-        assertTrue(comparar1);
-        assertFalse(comparar2);
+        assertTrue( 25 < 12 );
+        assertFalse( 25 < 27 );
         
     }
     
