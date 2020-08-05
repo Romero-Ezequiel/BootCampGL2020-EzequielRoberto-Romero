@@ -16,9 +16,9 @@ class AppTest {
     @Test
     void testLong() {
         Long valor = null;
-        assertNull(valor);
+        assertNull(valor, "El valor es null");
         valor = (long) 1;
-        assertNotNull(valor);
+        assertNotNull(valor, "El valor no es null");
        
     }
 
