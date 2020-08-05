@@ -25,18 +25,18 @@ class AppTest {
     @Test
     void testBooleano(){
         
-        assertTrue( 25 < 12 );
-        assertFalse( 25 < 27 );
+        assertTrue( 25 > 12, "Es mayor que" );
+        assertFalse( 75 > 27, "No es mayor que" );
         
     }
     
     //Ejercicio 1.4 -> Para que tire error
     @Test
     void testLong(){
-        Long valor = null;
-        assertNotNull(valor);
-        valor = (long) 1;
-        assertNull(valor);
+        Long valor = 20L;
+        assertNull(valor, "El valor es null");
+        valor = null;
+        assertNotNull(valor, "El valor no es null");
         
     }
     
