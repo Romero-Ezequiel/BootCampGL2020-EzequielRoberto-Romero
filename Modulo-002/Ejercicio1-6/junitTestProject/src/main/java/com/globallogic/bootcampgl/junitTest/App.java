@@ -18,9 +18,9 @@ public class App
         int res = sumar(a, b);
         int esperado = 5;
         if (res == esperado){
-            System.out.println("Este programa está bien hecho");
+            System.out.println("Este resultado esta bien");
         }else{
-            System.out.println("Este programa está mal hecho");
+            System.out.println("Este resultado está mal");
         }
     }
 }

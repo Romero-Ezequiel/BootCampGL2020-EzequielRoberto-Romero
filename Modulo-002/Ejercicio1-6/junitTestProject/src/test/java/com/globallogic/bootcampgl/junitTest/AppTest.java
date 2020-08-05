@@ -20,7 +20,8 @@ class AppTest {
         int resultado = App.sumar(2, 3);
         int esperado = 5;
         
-        assertEquals(esperado, resultado);
+        assertEquals(esperado, resultado, "El resultado es correcto");
+        assertNotEquals(4, App.sumar(7,5), "El resultado está mal");
 
     }
 
