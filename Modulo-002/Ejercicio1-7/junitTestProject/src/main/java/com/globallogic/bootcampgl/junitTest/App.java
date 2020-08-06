@@ -2,21 +2,17 @@ package com.globallogic.bootcampgl.junitTest;
 
 
 public class App 
-{
-    
+{ 
     public boolean Condicion(int valorMaximo) {
 
-        int contador = 0;
-        for(int valorInicial = 0; valorInicial < valorMaximo; valorInicial++ ) {  			
-            contador++;
+        boolean max = false;
+        for(int i = 0; i < valorMaximo;i++ ) {  			
+           if( i == 3){
+                max = true;
+                break;
+           }
         }
-
-        if(contador == 3){
-            return true;
-        }else{
-            return false;
-        }		
-	
+        return max;
     }
 }
 

@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.globallogic.bootcampgl.junitTest.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.26 sec <<< FAILURE! - in com.globallogic.bootcampgl.junitTest.AppTest
-testCondicion()  Time elapsed: 0.071 sec  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.globallogic.bootcampgl.junitTest.AppTest.testCondicion(AppTest.java:32)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec - in com.globallogic.bootcampgl.junitTest.AppTest

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.globallogic.bootcampgl.junitTest.AppTest" time="0.26" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.globallogic.bootcampgl.junitTest.AppTest" time="0.313" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10-post-Ubuntu-0ubuntu118.04.1"/>
@@ -59,9 +59,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testCondicion" classname="com.globallogic.bootcampgl.junitTest.AppTest" time="0.071">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.globallogic.bootcampgl.junitTest.AppTest.testCondicion(AppTest.java:32)
-]]></failure>
-  </testcase>
+  <testcase name="testValidarMax" classname="com.globallogic.bootcampgl.junitTest.AppTest" time="0.056"/>
 </testsuite>

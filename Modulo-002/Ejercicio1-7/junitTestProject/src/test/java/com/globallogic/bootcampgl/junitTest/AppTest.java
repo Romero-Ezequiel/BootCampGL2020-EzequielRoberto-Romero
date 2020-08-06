@@ -23,15 +23,14 @@ en lo siguientes casos:
 
 class AppTest {
 
-    @Test
-    void testCondicion() {
+
+	@Test
+	public void testValidarMax() {
+        
         App app = new App();
-        
-        boolean resultado = app.Condicion(6);
-        boolean valorEsperado = true;
-    	assertEquals(valorEsperado, resultado);
-        
-    }
-    
+            
+	assertTrue(app.Condicion(4),"Esta variable no es false");
+	assertFalse(app.Condicion(2),"Esta variable no es true");
+	}
 
 }
