@@ -8,7 +8,7 @@ class AppTest {
 
     @Test
     void test() {
-        assertEquals("Test", "Test");
+        assertEquals("Test",  "Test");
     }
 
 }
