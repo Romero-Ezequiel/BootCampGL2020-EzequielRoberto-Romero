@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.globallogic.bootcampgl.junitTest.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec <<< FAILURE! - in com.globallogic.bootcampgl.junitTest.AppTest
+testLong()  Time elapsed: 0.084 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at com.globallogic.bootcampgl.junitTest.AppTest.testLong(AppTest.java:39)
+
