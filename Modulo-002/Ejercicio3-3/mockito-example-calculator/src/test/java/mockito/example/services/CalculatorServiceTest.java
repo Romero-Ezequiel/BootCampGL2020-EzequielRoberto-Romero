@@ -23,44 +23,37 @@ public class CalculatorServiceTest {
     @Test
     @DisplayName("Test suma")
     void tesAdd() {		
-	int a = 6;
-	int b = 3;
-	when(basicOperationService.add(a, b)).thenReturn(9.0);
-	double resultado =  calc.calculateSum(a, b);
-	Assert.assertEquals(9.0, resultado);
-	verify(basicOperationService).add(6, 3);
+	when(basicOperationService.add(5, 5)).thenReturn(10.0);
+	double resultado =  calc.calculateSum(5, 5);
+	Assert.assertEquals(10.0, resultado);
+	verify(basicOperationService).add(5, 5);
     }
 	
     @Test
     @DisplayName("Test resta")
     void testSubtract() {
-	int a = 6;
-	int b = 3;
-	when(basicOperationService.subtract(a, b)).thenReturn(3.0);
-	double resultado =  calc.calculateSubstraction(a, b);
-	Assert.assertEquals(3.0, resultado);
-	verify(basicOperationService).subtract(6, 3);
+	when(basicOperationService.subtract(8, 3)).thenReturn(5.0);
+	double resultado =  calc.calculateSubstraction(8, 3);
+	Assert.assertEquals(5.0, resultado);
+	verify(basicOperationService).subtract(8, 3);
     }
 	
     @Test
     @DisplayName("Test multiplicacion")
     void testMultiply() {	
-	int a = 6;
-	int b = 3;
-	when(basicOperationService.multiply(a, b)).thenReturn(18.0);
-	double resultado =  calc.calculateMultiplication(a, b);
-	Assert.assertEquals(18.0, resultado);
-	verify(basicOperationService).multiply(6, 3);
+	
+	when(basicOperationService.multiply(2, 2)).thenReturn(4.0);
+	double resultado =  calc.calculateMultiplication(2, 2);
+	Assert.assertEquals(4.0, resultado);
+	verify(basicOperationService).multiply(2, 2);
     }
 	
     @Test
     @DisplayName("Test division")
     void testDivide() {
-	int a = 6;
-	int b = 3;
-	when(basicOperationService.divide(a, b)).thenReturn(2.0);
-	double resultado =  calc.calculateDivision(a, b);
-	Assert.assertEquals(2.0, resultado);
-	verify(basicOperationService).divide(6, 3);
+	when(basicOperationService.divide(10, 2)).thenReturn(5.0);
+	double resultado =  calc.calculateDivision(10, 2);
+	Assert.assertEquals(5.0, resultado);
+	verify(basicOperationService).divide(10, 2);
     }
 }
