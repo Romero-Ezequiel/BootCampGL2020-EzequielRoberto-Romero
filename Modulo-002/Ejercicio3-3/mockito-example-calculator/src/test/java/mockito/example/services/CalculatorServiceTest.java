@@ -23,18 +23,18 @@ public class CalculatorServiceTest {
     @Test
     @DisplayName("Test suma")
     void tesAdd() {		
+        
 	when(basicOperationService.add(5, 5)).thenReturn(10.0);
-	double resultado =  calc.calculateSum(5, 5);
-	Assert.assertEquals(10.0, resultado);
+        Assert.assertEquals(10.0, calc.calculateSum(5, 5));
 	verify(basicOperationService).add(5, 5);
     }
 	
     @Test
     @DisplayName("Test resta")
     void testSubtract() {
+        
 	when(basicOperationService.subtract(8, 3)).thenReturn(5.0);
-	double resultado =  calc.calculateSubstraction(8, 3);
-	Assert.assertEquals(5.0, resultado);
+        Assert.assertEquals(5.0, calc.calculateSubstraction(8, 3));
 	verify(basicOperationService).subtract(8, 3);
     }
 	
@@ -43,17 +43,16 @@ public class CalculatorServiceTest {
     void testMultiply() {	
 	
 	when(basicOperationService.multiply(2, 2)).thenReturn(4.0);
-	double resultado =  calc.calculateMultiplication(2, 2);
-	Assert.assertEquals(4.0, resultado);
+        Assert.assertEquals(4.0, calc.calculateMultiplication(2, 2));
 	verify(basicOperationService).multiply(2, 2);
     }
 	
     @Test
     @DisplayName("Test division")
     void testDivide() {
+        
 	when(basicOperationService.divide(10, 2)).thenReturn(5.0);
-	double resultado =  calc.calculateDivision(10, 2);
-	Assert.assertEquals(5.0, resultado);
+        Assert.assertEquals(5.0, calc.calculateDivision(10, 2));
 	verify(basicOperationService).divide(10, 2);
     }
 }
