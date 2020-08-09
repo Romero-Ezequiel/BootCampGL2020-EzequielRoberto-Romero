@@ -6,16 +6,12 @@ import org.junit.jupiter.api.Test;
 
 class PlanetTest {
 
-	@Test
-	void testMain() {
+    @Test
+    void testMain() {
 		
-		Planet planet = new Planet();
-		planet.setName("Tierra");
+	Planet planet = new Planet();
+	planet.setName("Tierra");	
+	assertNotNull(planet.getName());
 		
-		
-			
-		assertNotNull(planet.getName());
-		
-	}
-
+    }
 }
