@@ -29,8 +29,8 @@ public class CalculatorServiceTest {
     }
 
     @Test
-    @DisplayName("Test list")
-    void tesList() {
+    @DisplayName("Ejercicio 3-4")
+    void tesEjercicio() {
 
 	when(dataService.getListOfNumbers()).thenReturn(listaNumeros);
 	Assert.assertEquals(3.0, calculatorServiceImpl.calculateAverage(), .01);
