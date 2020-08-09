@@ -22,12 +22,12 @@ public class CalculatorServiceTest {
     private BasicOperationsService basicOperationsService;
 	
     @Test
-    @DisplayName("Ejercicio 3.6 - Módulo 2 - Mockito")
+    @DisplayName("Ejercicio 3-6")
     void testZeroDivisionException() {
 	assertThrows(ZeroDivisionException.class, () -> {
-		calculatorServiceImpl.calculateDivision(3, 0);
+		calculatorServiceImpl.calculateDivision(63, 0);
         });
 		
-	verify(basicOperationsService, never()).divide(3,0);
+	verify(basicOperationsService, never()).divide(63,0);
     }
 }
