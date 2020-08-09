@@ -19,11 +19,17 @@ Nulo un videogame e imprimir el contenido de askMyGame().
 public class App {
 
     public static void main(String[] args) {
-
-        Game g1 = new Game();
-        Playstation p1 = new Playstation(g1);
-        g1.setTittle("Brawlhalla");
+        
+        //Inyectar un juego de titulo Resident Evil
+        Playstation p1 = new Playstation(new Game("Resident Evil"));
         System.out.println(p1.askMyGame());
-       
+        
+        //Inyectar titulo Brawlhalla
+        p1.setVideogame(new Game("Brawlhalla"));
+        System.out.println(p1.askMyGame());
+        
+        //Inyectar en Nulo un videogame
+        p1.setVideogame(null);
+        System.out.println(p1.askMyGame());
     }   
 }
