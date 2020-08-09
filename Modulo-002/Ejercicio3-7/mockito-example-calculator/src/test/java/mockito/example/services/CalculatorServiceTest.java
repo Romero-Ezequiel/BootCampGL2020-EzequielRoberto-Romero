@@ -20,11 +20,11 @@ public class CalculatorServiceTest {
     private BasicOperationsService basicOperationsService;
 
     @Test
-    @DisplayName("Ejercicio 3.7")
+    @DisplayName("Ejercicio 3-7")
     void testSuma() {
         
-        when(basicOperationsService.add(2, 3)).thenReturn(5.0);
-        assertEquals("El resultado es: " + calculatorServiceImpl.calculateSum(2, 3), calculatorServiceImpl.printResult(calculatorServiceImpl.calculateSum(2, 3)));
+        when(basicOperationsService.add(12, 3)).thenReturn(15.0);
+        assertEquals("El resultado es: " + calculatorServiceImpl.calculateSum(12, 3), calculatorServiceImpl.printResult(calculatorServiceImpl.calculateSum(12, 3)));
     
     }
 }
