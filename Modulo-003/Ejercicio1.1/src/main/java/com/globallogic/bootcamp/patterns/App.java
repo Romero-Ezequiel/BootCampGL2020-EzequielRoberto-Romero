@@ -17,9 +17,14 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         
-        ElectricalOven electricalOven = new ElectricalOven();
-        electricalOven.TurnOn(450);
-        electricalOven.TurnOn(175);
+        //Ejercicio 1.1 - Patron Delegate
+        ElectricalOven oven = new ElectricalOven(new LedAppliance());
+        System.out.println(oven.getPower());
+        
+        oven.turnOn();
+        System.out.println(oven.getPower());
+        oven.turnLed();
+        System.out.println(oven.getPower());
         
     }
     

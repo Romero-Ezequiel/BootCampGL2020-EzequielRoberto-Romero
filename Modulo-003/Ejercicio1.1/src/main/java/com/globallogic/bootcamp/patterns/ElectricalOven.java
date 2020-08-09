@@ -2,15 +2,19 @@ package com.globallogic.bootcamp.patterns;
 
 public class ElectricalOven extends ElectricalAppliance {
 
-    private final LedAppliance LedAppliance;
-    
-    public ElectricalOven(){
-        LedAppliance = new LedAppliance();
+    private LedAppliance ledAppliance;
+   
+    public ElectricalOven(LedAppliance led){
+        this.ledAppliance = led;
+    }
+
+    @Override
+    public void turnOn(){
+        this.setPower(this.getPower() - 75);
     }
     
-    
-    public void TurnLed(Integer p) throws Exception{
-        LedAppliance.TurnOn(p);
+    public void turnLed(){
+        this.setPower(ledAppliance.turnOn(this.power));
     }
 
 }
