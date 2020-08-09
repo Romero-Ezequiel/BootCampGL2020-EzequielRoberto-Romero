@@ -21,7 +21,7 @@ public class CalculatorServiceTest {
     private BasicOperationsService basicOperationService;
 
     @Test
-    @DisplayName("Test suma")
+    @DisplayName("Suma")
     void tesAdd() {		
         
 	when(basicOperationService.add(5, 5)).thenReturn(10.0);
@@ -30,7 +30,7 @@ public class CalculatorServiceTest {
     }
 	
     @Test
-    @DisplayName("Test resta")
+    @DisplayName("Resta")
     void testSubtract() {
         
 	when(basicOperationService.subtract(8, 3)).thenReturn(5.0);
@@ -39,7 +39,7 @@ public class CalculatorServiceTest {
     }
 	
     @Test
-    @DisplayName("Test multiplicacion")
+    @DisplayName("Multiplicacion")
     void testMultiply() {	
 	
 	when(basicOperationService.multiply(2, 2)).thenReturn(4.0);
@@ -48,7 +48,7 @@ public class CalculatorServiceTest {
     }
 	
     @Test
-    @DisplayName("Test division")
+    @DisplayName("Division")
     void testDivide() {
         
 	when(basicOperationService.divide(10, 2)).thenReturn(5.0);
