@@ -2,8 +2,8 @@ package hibernate;
 
 import java.util.List;
 import javax.transaction.SystemException;
-import javax.transaction.Transaction;
-import org.h2.engine.Session;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class AlumnoDao {
     

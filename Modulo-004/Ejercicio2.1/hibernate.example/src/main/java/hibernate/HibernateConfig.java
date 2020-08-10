@@ -1,11 +1,11 @@
 package hibernate;
 
-import com.sun.xml.fastinfoset.sax.Properties;
-import javax.imageio.spi.ServiceRegistry;
+import java.util.Properties;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
+import org.hibernate.service.ServiceRegistry;
 
 public class HibernateConfig {
     
